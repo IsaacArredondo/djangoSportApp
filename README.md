@@ -1,17 +1,17 @@
 Primero
 
-'''
+```
 django-admin startproject sportspredictor
-'''
+```
 
 Segundo
 
 Entrar a la carpeta del proyecto sportspredictor y crear una app.
 
-'''
+```
 cd sportspredictor
 python manage.py startapp dashboard
-'''
+```
 
 Ahora creamos el archivo que guardara las templates
 
