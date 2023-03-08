@@ -67,3 +67,16 @@ Y probamos que funcione correctamente el administrador de bases de datos.
 
 Una vez funcionando correctamente registramos el modelo en el archivo models.py, y probamos agregar un registro en el administrador de bases de datos.
 
+El siguiente paso es instalar sklearn en el ambiente virtual para importar nuestro modelo de clasificación con el siguiente comando:
+
+```
+pip install sklearn
+```
+
+Además, importamos las librerias y el modelo clasificador correspondiente en models.py y creamos la carpeta ml_model donde pondremos el modelo .joblib.
+
+```
+from sklearn.tree import DecisionTreeClassifier
+import joblib
+```
+Agregamos el codigo que leera el modelo, y hara las prediciones y volvemos teclear los makemigrations y migrate.

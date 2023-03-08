@@ -17,6 +17,11 @@ class Data(models.Model):
     predictions = models.CharField(max_length=100, blank=True)
     date = models.DateTimeField(auto_now_add=True)
 
+    def save(self, *args, **kwargs):
+        ml_model = joblib.load('ml_model/ml_sport_model.joblib')
+        self.predictions = ml_model.predict([[self.age, self.height, self.sex]])
+        return super().save(*args, *kwargs)
+
     class Meta:
         ordering = ['-date']
 
