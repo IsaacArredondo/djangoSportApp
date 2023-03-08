@@ -1,4 +1,7 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
+from sklearn.tree import DecisionTreeClassifier
+import joblib
 
 GENDER =(
     (0, 'Female'),
@@ -8,7 +11,7 @@ GENDER =(
 # Create your models here.
 class Data(models.Model):
     name = models.CharField(max_length=100, null=True)
-    age = models.PositiveIntegerField(null=True)
+    age = models.PositiveIntegerField(validators = [MinValueValidator(13), MaxValueValidator(19)], null=True)
     height = models.PositiveIntegerField(null=True)
     sex = models.PositiveIntegerField(choices=GENDER, null=True)
     predictions = models.CharField(max_length=100, blank=True)
