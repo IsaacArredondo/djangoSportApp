@@ -82,3 +82,8 @@ import joblib
 Agregamos el codigo que leera el modelo, y hara las prediciones y volvemos teclear los makemigrations y migrate.
 
 Tambien agregamos un modelo en admin.py para cambiar la forma del display en los registros.
+
+Ahora creo el archivo forms.py e inserto el modelo de este archivo en el archivo views.py en la función index con un contexto de retorno para poder agregarlo en el archivo index.html
+
+El siguiente paso es instalar crispy fonts siguiendo la liga: https://django-crispy-forms.readthedocs.io/en/latest/install.html, luego agrego el crispy template cambiando el predeterminado a 'boostrap4', esto se hace en el archivo settings.py, y en archivo index.html, agregamos el crispy filter de la liga: https://django-crispy-forms.readthedocs.io/en/latest/filters.html, además neceitamos instalar el crispy-boostrap4.
+
