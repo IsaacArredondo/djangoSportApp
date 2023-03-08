@@ -80,3 +80,5 @@ from sklearn.tree import DecisionTreeClassifier
 import joblib
 ```
 Agregamos el codigo que leera el modelo, y hara las prediciones y volvemos teclear los makemigrations y migrate.
+
+Tambien agregamos un modelo en admin.py para cambiar la forma del display en los registros.
