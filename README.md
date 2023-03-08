@@ -45,3 +45,22 @@ Despues creamos las vistas index.html y predictions.html en views.py del dashboa
 Asi mismo, tambien agregamos la ruta en el archivo urls.py del folder sportpredictor.
 
 Agregamos el contenido de los archivos html.
+
+Tambien agregamos el modelo Data y reflejamos el modelo creado en una base de datos con el comando:
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+Y creamos un manager del sistema con el comando:
+
+```
+python manage.py createsuperuser
+```
+
+Podemos como usuario: admin
+correo: admin@gmail.com
+pwd: admin
+
+Y probamos que funcione correctamente el administrador de bases de datos.
