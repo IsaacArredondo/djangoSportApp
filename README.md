@@ -42,4 +42,6 @@ python manage.py runserver
 
 Despues creamos las vistas index.html y predictions.html en views.py del dashboard y creamos el archivo urls.py con las respectivas rutas en esta misma carpeta.
 
-Asi mismo, tambien agregamos la ruta en el archivo urls.py del folder sportpredictor
+Asi mismo, tambien agregamos la ruta en el archivo urls.py del folder sportpredictor.
+
+Agregamos el contenido de los archivos html.
