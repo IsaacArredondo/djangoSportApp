@@ -64,3 +64,6 @@ correo: admin@gmail.com
 pwd: admin
 
 Y probamos que funcione correctamente el administrador de bases de datos.
+
+Una vez funcionando correctamente registramos el modelo en el archivo models.py, y probamos agregar un registro en el administrador de bases de datos.
+
